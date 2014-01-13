@@ -1,0 +1,29 @@
+<h1>Listing cliente_fisicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cpf</th>
+      <th>Cliente</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cliente_fisicos.each do |cliente_fisico| %>
+      <tr>
+        <td><%= cliente_fisico.cpf %></td>
+        <td><%= cliente_fisico.cliente %></td>
+        <td><%= link_to 'Show', cliente_fisico %></td>
+        <td><%= link_to 'Edit', edit_cliente_fisico_path(cliente_fisico) %></td>
+        <td><%= link_to 'Destroy', cliente_fisico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cliente fisico', new_cliente_fisico_path %>

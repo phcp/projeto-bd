@@ -1,0 +1,33 @@
+<h1>Listing producaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Quantidade</th>
+      <th>Produto</th>
+      <th>Materiaprima</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @producaos.each do |producao| %>
+      <tr>
+        <td><%= producao.data %></td>
+        <td><%= producao.quantidade %></td>
+        <td><%= producao.produto_id %></td>
+        <td><%= producao.materiaprima_id %></td>
+        <td><%= link_to 'Show', producao %></td>
+        <td><%= link_to 'Edit', edit_producao_path(producao) %></td>
+        <td><%= link_to 'Destroy', producao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Producao', new_producao_path %>

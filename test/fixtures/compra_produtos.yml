@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2014-01-13 00:44:13
+  status: 1
+  pagamento: 1.5
+  quantidade: 1
+  fornecedor_id: 1
+  produto_id: 1
+
+two:
+  data: 2014-01-13 00:44:13
+  status: 1
+  pagamento: 1.5
+  quantidade: 1
+  fornecedor_id: 1
+  produto_id: 1

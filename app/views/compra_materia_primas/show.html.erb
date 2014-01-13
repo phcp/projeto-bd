@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @compra_materia_prima.data %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @compra_materia_prima.status %>
+</p>
+
+<p>
+  <strong>Pagamento:</strong>
+  <%= @compra_materia_prima.pagamento %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @compra_materia_prima.preco %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @compra_materia_prima.quantidade %>
+</p>
+
+<p>
+  <strong>Fornecedor:</strong>
+  <%= @compra_materia_prima.fornecedor_id %>
+</p>
+
+<p>
+  <strong>Materiaprima:</strong>
+  <%= @compra_materia_prima.materiaprima_id %>
+</p>
+
+<%= link_to 'Edit', edit_compra_materia_prima_path(@compra_materia_prima) %> |
+<%= link_to 'Back', compra_materia_primas_path %>

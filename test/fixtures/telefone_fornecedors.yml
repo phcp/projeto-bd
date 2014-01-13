@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ddd: MyString
+  telefone: MyString
+  fornecedor_id: 
+
+two:
+  ddd: MyString
+  telefone: MyString
+  fornecedor_id: 

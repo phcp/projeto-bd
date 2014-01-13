@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @producao.data %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @producao.quantidade %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @producao.produto_id %>
+</p>
+
+<p>
+  <strong>Materiaprima:</strong>
+  <%= @producao.materiaprima_id %>
+</p>
+
+<%= link_to 'Edit', edit_producao_path(@producao) %> |
+<%= link_to 'Back', producaos_path %>

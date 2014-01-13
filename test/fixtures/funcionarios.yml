@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cargo: MyString
+  cpf: MyString
+  senha: MyString
+  pessoa_id: 
+
+two:
+  cargo: MyString
+  cpf: MyString
+  senha: MyString
+  pessoa_id: 

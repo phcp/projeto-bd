@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @solicitacao.status %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @solicitacao.data %>
+</p>
+
+<p>
+  <strong>Desconto:</strong>
+  <%= @solicitacao.desconto %>
+</p>
+
+<p>
+  <strong>Pagamento:</strong>
+  <%= @solicitacao.pagamento %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @solicitacao.cliente_id %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @solicitacao.produto_id %>
+</p>
+
+<p>
+  <strong>Pessoa:</strong>
+  <%= @solicitacao.pessoa_id %>
+</p>
+
+<%= link_to 'Edit', edit_solicitacao_path(@solicitacao) %> |
+<%= link_to 'Back', solicitacaos_path %>

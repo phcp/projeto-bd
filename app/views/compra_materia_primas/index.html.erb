@@ -1,0 +1,39 @@
+<h1>Listing compra_materia_primas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Status</th>
+      <th>Pagamento</th>
+      <th>Preco</th>
+      <th>Quantidade</th>
+      <th>Fornecedor</th>
+      <th>Materiaprima</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @compra_materia_primas.each do |compra_materia_prima| %>
+      <tr>
+        <td><%= compra_materia_prima.data %></td>
+        <td><%= compra_materia_prima.status %></td>
+        <td><%= compra_materia_prima.pagamento %></td>
+        <td><%= compra_materia_prima.preco %></td>
+        <td><%= compra_materia_prima.quantidade %></td>
+        <td><%= compra_materia_prima.fornecedor_id %></td>
+        <td><%= compra_materia_prima.materiaprima_id %></td>
+        <td><%= link_to 'Show', compra_materia_prima %></td>
+        <td><%= link_to 'Edit', edit_compra_materia_prima_path(compra_materia_prima) %></td>
+        <td><%= link_to 'Destroy', compra_materia_prima, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Compra materia prima', new_compra_materia_prima_path %>
