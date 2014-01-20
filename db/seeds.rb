@@ -23,6 +23,33 @@
 		["Espinheiro", "50050050", "Recife", "Rua Dona Filomena", "", "Pernambuco", "659"],		
 	]
 
+	lista_pessoas = [
+		["Ermano Ardiles Arruda", "eaa3@cin.ufpe.br", 1],
+		["Ingrid Guimaraes", "ig@ig.com.br", 2],
+		["Bruno Batista da Silva", "brunobat@gmail.com", 3],
+		["Kaua Rocha Costa", "kauas@gmail.com", 4],
+		["Giovana Carvalho Rodrigues", "gio121212@gmail.com", 5],
+		["Nicolas Correia Cavalcanti", "nickool@yahoo.com.br", 6],
+		["Yasmin Silva Correia", "correia_yasmins@aol.com", 7],
+		["Giovana Ribeiro Pinto", "gioovana@linuxmail.com", 8],
+		["Joao Cavalcanti Araujo", "johncavalcantii66@gmail.com", 9],
+		["Tomas Cunha Santos", "cibern3t1c_b0y@gmail.com", 10],
+	]
+
+	lista_fornecedores = [
+		["Fornecedor 1 Ltda.", "7263287328372", "fornecedor1@gmail.com", 11],
+		["Fornecedor 2 S.A.", "8372932932", "fornecedor2@ig.com.br", 12],
+		["Fornecedor 3", "091281092812", "fornecedor3@gmail.com", 13],
+	]
+	
 	lista_enderecos.each do |bairro, cep, cidade, logradouro, complemento, estado, numero|
 		Endereco.create(bairro: bairro, cep: cep, cidade: cidade, logradouro: logradouro, complemento: complemento, estado: estado, numero: numero)
+	end
+
+	lista_pessoas.each do |nome, email, endereco_id|
+		Pessoa.create(nome: nome, email: email, endereco_id: endereco_id)
+	end
+
+	lista_fornecedores.each do |nome, cnpj, email, endereco_id|
+		Fornecedor.create(nome: nome, cnpj: cnpj, email: email, endereco_id: endereco_id)
 	end
