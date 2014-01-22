@@ -4,7 +4,6 @@
   <thead>
     <tr>
       <th>Nome</th>
-      <th>Telefone</th>
       <th>Email</th>
       <th>Endereço</th>
       <th></th>
@@ -17,7 +16,6 @@
     <% @pessoas.each do |pessoa| %>
       <tr>
         <td><%= pessoa.nome %></td>
-        <td><%= pessoa.telefone %></td>
         <td><%= pessoa.email %></td>
         <td><%= pessoa.endereco_id %></td>
         <td><%= link_to 'Exibir', pessoa %></td>

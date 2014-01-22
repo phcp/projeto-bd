@@ -1,1 +1,1 @@
-json.extract! @fornecedor, :id, :nome, :cnpj, :telefone, :email, :endereco_id, :created_at, :updated_at
+json.extract! @fornecedor, :id, :nome, :cnpj, :email, :endereco_id, :created_at, :updated_at
