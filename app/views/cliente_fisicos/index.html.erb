@@ -1,9 +1,9 @@
-<h1>Listing cliente_fisicos</h1>
+<h1>Clientes Físicos</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>Cpf</th>
+      <th>CPF</th>
       <th>Cliente</th>
       <th></th>
       <th></th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= cliente_fisico.cpf %></td>
         <td><%= cliente_fisico.cliente %></td>
-        <td><%= link_to 'Show', cliente_fisico %></td>
-        <td><%= link_to 'Edit', edit_cliente_fisico_path(cliente_fisico) %></td>
-        <td><%= link_to 'Destroy', cliente_fisico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', cliente_fisico %></td>
+        <td><%= link_to 'Editar', edit_cliente_fisico_path(cliente_fisico) %></td>
+        <td><%= link_to 'Apagar', cliente_fisico, method: :delete, data: { confirm: 'Tem certeza disso?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Cliente fisico', new_cliente_fisico_path %>
+<%= link_to 'Novo Cliente Físico', new_cliente_fisico_path %>

@@ -1,10 +1,10 @@
-<h1>Listing funcionarios</h1>
+<h1>Funcionários</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Cargo</th>
-      <th>Cpf</th>
+      <th>CPF</th>
       <th>Senha</th>
       <th>Pessoa</th>
       <th></th>
@@ -20,9 +20,9 @@
         <td><%= funcionario.cpf %></td>
         <td><%= funcionario.senha %></td>
         <td><%= funcionario.pessoa %></td>
-        <td><%= link_to 'Show', funcionario %></td>
-        <td><%= link_to 'Edit', edit_funcionario_path(funcionario) %></td>
-        <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', funcionario %></td>
+        <td><%= link_to 'Editar', edit_funcionario_path(funcionario) %></td>
+        <td><%= link_to 'Apagar', funcionario, method: :delete, data: { confirm: 'Tem certeza disso?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Funcionario', new_funcionario_path %>
+<%= link_to 'Novo Funcionário', new_funcionario_path %>

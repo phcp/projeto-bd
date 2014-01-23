@@ -1,10 +1,10 @@
-<h1>Listing fornecedors</h1>
+<h1>Fornecedores</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Nome</th>
-      <th>Cnpj</th>
+      <th>CNPJ</th>
       <th>Telefone</th>
       <th>Email</th>
       <th>Endereco</th>
@@ -22,9 +22,9 @@
         <td><%= fornecedor.telefone %></td>
         <td><%= fornecedor.email %></td>
         <td><%= fornecedor.endereco_id %></td>
-        <td><%= link_to 'Show', fornecedor %></td>
-        <td><%= link_to 'Edit', edit_fornecedor_path(fornecedor) %></td>
-        <td><%= link_to 'Destroy', fornecedor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', fornecedor %></td>
+        <td><%= link_to 'Editar', edit_fornecedor_path(fornecedor) %></td>
+        <td><%= link_to 'Apagar', fornecedor, method: :delete, data: { confirm: 'Tem certeza disso?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Fornecedor', new_fornecedor_path %>
+<%= link_to 'Novo Fornecedor', new_fornecedor_path %>

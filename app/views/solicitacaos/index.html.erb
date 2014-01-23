@@ -1,6 +1,6 @@
-<h1>Listing solicitacaos</h1>
+<h1>Solicitações</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Status</th>
@@ -26,9 +26,9 @@
         <td><%= solicitacao.cliente_id %></td>
         <td><%= solicitacao.produto_id %></td>
         <td><%= solicitacao.pessoa_id %></td>
-        <td><%= link_to 'Show', solicitacao %></td>
-        <td><%= link_to 'Edit', edit_solicitacao_path(solicitacao) %></td>
-        <td><%= link_to 'Destroy', solicitacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', solicitacao %></td>
+        <td><%= link_to 'Editar', edit_solicitacao_path(solicitacao) %></td>
+        <td><%= link_to 'Apagar', solicitacao, method: :delete, data: { confirm: 'Tem certeza disso?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Solicitacao', new_solicitacao_path %>
+<%= link_to 'Nova Solicitação', new_solicitacao_path %>

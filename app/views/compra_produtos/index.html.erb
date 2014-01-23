@@ -1,6 +1,6 @@
-<h1>Listing compra_produtos</h1>
+<h1>Listando Compras de Produtos</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Data</th>
@@ -24,9 +24,9 @@
         <td><%= compra_produto.quantidade %></td>
         <td><%= compra_produto.fornecedor_id %></td>
         <td><%= compra_produto.produto_id %></td>
-        <td><%= link_to 'Show', compra_produto %></td>
-        <td><%= link_to 'Edit', edit_compra_produto_path(compra_produto) %></td>
-        <td><%= link_to 'Destroy', compra_produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', compra_produto %></td>
+        <td><%= link_to 'Editar', edit_compra_produto_path(compra_produto) %></td>
+        <td><%= link_to 'Apagar', compra_produto, method: :delete, data: { confirm: 'Tem certeza disso?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Compra produto', new_compra_produto_path %>
+<%= link_to 'Nova Compra de Produto', new_compra_produto_path %>
